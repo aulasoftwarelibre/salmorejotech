@@ -16,6 +16,16 @@ export type Edition = {
 // Aula de Software Libre of the University of Córdoba.
 export const editions: Edition[] = [
   {
+    year: 2027,
+    date: "Fecha por anunciar",
+    shortDate: "TBA",
+    tagline: "La cita de la tecnología cordobesa volverá a reunirnos",
+    description:
+      "El evento más cordobés y tech de la provincia prepara una nueva edición con grandes ponentes, networking y productos típicos de la capital de Al-Ándalus. Pronto anunciaremos la fecha.",
+    url: null,
+    status: "announced",
+  },
+  {
     year: 2026,
     date: "8 de mayo de 2026",
     shortDate: "8 MAY 2026",
@@ -30,27 +40,29 @@ export const editions: Edition[] = [
       { value: "2", label: "Tracks" },
     ],
     highlights: ["Track Omeya", "Track Mudéjar", "Networking"],
-    status: "upcoming",
+    status: "past",
   },
   {
     year: 2025,
-    date: "2025",
+    date: "9 de mayo de 2025",
     shortDate: "2025",
     tagline: "Otro año de tecnología con sabor cordobés",
     description:
       "Una nueva edición del encuentro tecnológico de referencia en Córdoba, con charlas, comunidad y el mejor ambiente.",
     url: "https://salmorejo.tech/2025/",
     status: "past",
+    venue: "Salón de Actos del Rectorado · Córdoba"
   },
   {
     year: 2024,
-    date: "2024",
+    date: "26 de abril de 2024",
     shortDate: "2024",
     tagline: "El evento tecnológico de Córdoba",
     description:
       "El SalmorejoTech sigue creciendo como punto de encuentro de profesionales, estudiantes y empresas del sector tecnológico cordobés.",
     url: "https://salmorejo.tech/2024/",
     status: "past",
+    venue: "Salón de Actos del C.M. Nuestra Señora de La Asunción · Córdoba"
   },
   {
     year: 2023,
@@ -61,6 +73,8 @@ export const editions: Edition[] = [
       "Una jornada completa de charlas y networking donde compartir y hacer comunidad con el ecosistema tecnológico de Córdoba.",
     url: "https://salmorejo.tech/2023/",
     status: "past",
+    venue: "Salón de Actos del Rectorado · Córdoba"
+
   },
   {
     year: 2022,
@@ -86,7 +100,7 @@ export const editions: Edition[] = [
     description:
       "Tras el éxito de 2019, el SalmorejoTech volvió en formato presencial con todas las medidas de seguridad. Una jornada completa dedicada a la tecnología y el software libre.",
     url: "https://salmorejo.tech/2021/",
-    venue: "Córdoba",
+    venue: "Salón de Actos del Rectorado · Córdoba",
     highlights: ["Formato presencial", "Charlas", "Networking"],
     status: "past",
   },
@@ -99,6 +113,8 @@ export const editions: Edition[] = [
       "La edición de 2020 no pudo celebrarse a causa de la pandemia de COVID-19. Nos volvimos a ver, con más ganas que nunca, en 2021.",
     url: null,
     status: "cancelled",
+    venue: "Salón de Actos del Rectorado · Córdoba"
+
   },
   {
     year: 2019,
@@ -108,7 +124,7 @@ export const editions: Edition[] = [
     description:
       "La primera edición del SalmorejoTech, donde nació el evento tecnológico con más sabor de Córdoba. El rotundo éxito que dio inicio a todo.",
     url: "https://salmorejo.tech/2019/",
-    venue: "Córdoba",
+    venue: "Salón de Actos del Rectorado · Córdoba",
     status: "past",
   },
 ]

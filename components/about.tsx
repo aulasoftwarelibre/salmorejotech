@@ -1,13 +1,13 @@
 const facts = [
   {
-    value: "+400",
+    value: "+2000",
     label: "Asistentes",
-    description: "Profesionales, estudiantes y empresas en cada edición.",
+    description: "Profesionales, estudiantes y empresas entre todas las ediciones.",
   },
   {
-    value: "+10",
-    label: "Charlas",
-    description: "Ponencias de referentes del sector tecnológico.",
+    value: "7",
+    label: "Ediciones",
+    description: "Año tras año reuniendo a la comunidad tecnológica cordobesa.",
   },
   {
     value: "2019",
@@ -45,7 +45,7 @@ export function About() {
             key={fact.label}
             className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm"
           >
-            <div className="font-display text-4xl leading-none text-salmorejo-coral sm:text-5xl">
+            <div className="font-display text-4xl font-bold leading-none text-salmorejo-coral sm:text-5xl">
               {fact.value}
             </div>
             <div className="mt-2 text-sm font-bold uppercase tracking-wide text-foreground">

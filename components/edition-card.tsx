@@ -2,11 +2,11 @@ import type { Edition } from "@/lib/editions"
 import { ArrowUpRight, Calendar, MapPin } from "lucide-react"
 
 function StatusBadge({ status }: { status: Edition["status"] }) {
-  if (status === "upcoming") {
+  if (status === "upcoming" || status === "announced") {
     return (
       <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
         <span className="size-2 animate-pulse rounded-full bg-white" />
-        Próxima
+        {status === "announced" ? "Por anunciar" : "Próxima"}
       </span>
     )
   }
@@ -25,7 +25,7 @@ function StatusBadge({ status }: { status: Edition["status"] }) {
 }
 
 export function EditionCard({ edition }: { edition: Edition }) {
-  const isUpcoming = edition.status === "upcoming"
+  const isUpcoming = edition.status === "upcoming" || edition.status === "announced"
   const isCancelled = edition.status === "cancelled"
 
   const inner = (
@@ -84,7 +84,8 @@ export function EditionCard({ edition }: { edition: Edition }) {
 
       <p
         className={[
-          "mt-2 flex-1 text-pretty text-sm leading-relaxed",
+          "mt-2 text-pretty text-sm leading-relaxed",
+          edition.status === "announced" ? "" : "flex-1",
           isUpcoming ? "text-white/90" : "text-muted-foreground",
         ].join(" ")}
       >
@@ -116,6 +117,8 @@ export function EditionCard({ edition }: { edition: Edition }) {
             aria-hidden="true"
           />
         </div>
+      ) : edition.status === "announced" ? (
+        <div className="flex-1" />
       ) : (
         <div className="mt-6 text-sm font-medium text-muted-foreground">
           Sin edición este año

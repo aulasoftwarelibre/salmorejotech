@@ -30,7 +30,15 @@ export function Hero() {
 
         <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-white/90 sm:text-lg">
           Desde 2019, el congreso de tecnología más grande de Córdoba. Charlas,
-          software libre y networking organizados por el Aula de Software Libre
+          software libre y networking organizados por el{" "}
+          <a
+            href="https://www.uco.es/aulasoftwarelibre/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-bold text-white underline decoration-white/60 underline-offset-4 transition-colors hover:decoration-white"
+          >
+            Aula de Software Libre
+          </a>{" "}
           de la Universidad de Córdoba.
         </p>
 

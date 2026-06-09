@@ -5,14 +5,14 @@ const facts = [
     description: "Profesionales, estudiantes y empresas entre todas las ediciones.",
   },
   {
-    value: "7",
-    label: "Ediciones",
-    description: "Año tras año reuniendo a la comunidad tecnológica cordobesa.",
+    value: "+90",
+    label: "Ponentes",
+    description: "Que han impartido distintas charlas y talleres a lo largo de todas las ediciones.",
   },
   {
     value: "2019",
     label: "Desde",
-    description: "Año tras año, salvo la pausa de 2020 por la pandemia.",
+    description: "Año tras año reuniendo a la comunidad tecnológica cordobesa.",
   },
   {
     value: "Córdoba",

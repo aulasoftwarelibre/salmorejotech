@@ -17,7 +17,7 @@ const facts = [
   {
     value: "Córdoba",
     label: "Sede",
-    description: "La capital de Al-Ándalus, cuna del mejor salmorejo.",
+    description: "Ciudad milenaria y cuna del mejor salmorejo.",
   },
 ]
 

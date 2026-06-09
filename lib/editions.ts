@@ -21,7 +21,7 @@ export const editions: Edition[] = [
     shortDate: "TBA",
     tagline: "La cita de la tecnología cordobesa volverá a reunirnos",
     description:
-      "El evento más cordobés y tech de la provincia prepara una nueva edición con grandes ponentes, networking y productos típicos de la capital de Al-Ándalus. Pronto anunciaremos la fecha.",
+      "El evento más cordobés y tech de la provincia prepara una nueva edición con grandes ponentes, networking y productos típicos de Córdoba. Pronto anunciaremos la fecha.",
     url: null,
     status: "announced",
   },
@@ -31,7 +31,7 @@ export const editions: Edition[] = [
     shortDate: "8 MAY 2026",
     tagline: "La cita de la tecnología cordobesa regresa con una energía imparable",
     description:
-      "Vuelve el evento más cordobés y tech de la provincia con grandes ponentes, networking y productos típicos de la capital de Al-Ándalus. Dos tracks paralelos: Omeya y Mudéjar.",
+      "Vuelve el evento más cordobés y tech de la provincia con grandes ponentes, networking y productos típicos de Córdoba. Dos tracks paralelos: Omeya y Mudéjar.",
     url: "https://salmorejo.tech/2026/",
     venue: "Salón de Actos del Rectorado · Córdoba",
     stats: [

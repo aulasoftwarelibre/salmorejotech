@@ -14,7 +14,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"
       />
 
-      <div className="relative mx-auto flex min-h-[88vh] max-w-5xl flex-col items-center justify-center px-6 py-24 text-center">
+      <div className="relative mx-auto flex min-h-svh max-w-5xl flex-col items-center justify-center px-6 py-24 text-center">
         <Image
           src="/images/isologo-blanco.svg"
           alt="SalmorejoTech"

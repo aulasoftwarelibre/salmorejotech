@@ -3,9 +3,9 @@ import { EditionCard } from "@/components/edition-card"
 
 export function EditionsGrid() {
   return (
-    <section id="ediciones" className="scroll-mt-8 bg-secondary/50 py-20 sm:py-28">
+    <section className="bg-secondary/50 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
+        <div id="ediciones" className="mx-auto max-w-3xl scroll-mt-20 text-center">
           <span className="font-display text-3xl text-salmorejo-red sm:text-4xl">
             Todas las ediciones
           </span>

@@ -8,6 +8,19 @@ server {
     return 301 https://salmorejo.tech$request_uri;
 }
 
+# Detect if "all" is present in the query string (e.g. ?all, ?all=1, ?foo=bar&all)
+map $args $is_all {
+    default 0;
+    ~*(^|&)all(=|&|$) 1;
+}
+
+# If is_all=0 and LANDING is set to a year, set the target redirect path.
+# If is_all=1 or LANDING is empty, fall back to empty string (no redirect).
+map "$is_all:${LANDING}" $landing_redirect {
+    "~^0:([0-9]+)$" "/$1/";
+    default "";
+}
+
 # Canonical site (salmorejo.tech) + default for any other host.
 server {
     listen 3000 default_server;
@@ -37,6 +50,14 @@ server {
         access_log off;
         add_header Content-Type text/plain;
         return 200 "ok";
+    }
+
+    # Root location: conditional redirect if an active edition is defined
+    location = / {
+        if ($landing_redirect != "") {
+            return 302 $landing_redirect;
+        }
+        try_files /index.html =404;
     }
 
     location / {

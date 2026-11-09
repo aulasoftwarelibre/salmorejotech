@@ -19,12 +19,16 @@ FROM nginx:alpine
 RUN addgroup -g 1001 -S appgroup && \
     adduser -u 1001 -S appuser -G appgroup
 
+ENV LANDING=""
+ENV NGINX_ENVSUBST_FILTER="^LANDING$"
+
 COPY --from=builder /app/out /usr/share/nginx/html
-COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
+COPY docker/nginx.conf.template /etc/nginx/templates/default.conf.template
 
 RUN sed -i '/^user /d' /etc/nginx/nginx.conf && \
     sed -i 's|^pid .*;|pid /tmp/nginx.pid;|' /etc/nginx/nginx.conf && \
-    chown -R appuser:appgroup /var/cache/nginx /var/log/nginx /usr/share/nginx/html && \
+    mkdir -p /etc/nginx/conf.d /etc/nginx/templates && \
+    chown -R appuser:appgroup /var/cache/nginx /var/log/nginx /usr/share/nginx/html /etc/nginx/conf.d /etc/nginx/templates && \
     touch /tmp/nginx.pid && chown appuser:appgroup /tmp/nginx.pid
 
 USER appuser

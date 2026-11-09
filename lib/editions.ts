@@ -23,7 +23,7 @@ export const editions: Edition[] = [
     description:
       "El evento más cordobés y tech de la provincia prepara una nueva edición con grandes ponentes, networking y productos típicos de Córdoba.",
     url: "https://salmorejo.tech/2027/",
-    venue: "Salón de Actos del Rectorado · Córdoba",
+    venue: "TBA · Córdoba",
     status: "upcoming",
   },
   {

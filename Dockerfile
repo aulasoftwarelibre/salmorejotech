@@ -19,7 +19,7 @@ FROM nginx:alpine
 RUN addgroup -g 1001 -S appgroup && \
     adduser -u 1001 -S appuser -G appgroup
 
-ENV LANDING=""
+ENV LANDING="2027"
 ENV NGINX_ENVSUBST_FILTER="^LANDING$"
 
 COPY --from=builder /app/out /usr/share/nginx/html

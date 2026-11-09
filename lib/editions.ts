@@ -17,13 +17,14 @@ export type Edition = {
 export const editions: Edition[] = [
   {
     year: 2027,
-    date: "Fecha por anunciar",
-    shortDate: "TBA",
+    date: "7 de mayo de 2027",
+    shortDate: "7 MAY 2027",
     tagline: "La cita de la tecnología cordobesa volverá a reunirnos",
     description:
-      "El evento más cordobés y tech de la provincia prepara una nueva edición con grandes ponentes, networking y productos típicos de Córdoba. Pronto anunciaremos la fecha.",
-    url: null,
-    status: "announced",
+      "El evento más cordobés y tech de la provincia prepara una nueva edición con grandes ponentes, networking y productos típicos de Córdoba.",
+    url: "https://salmorejo.tech/2027/",
+    venue: "Salón de Actos del Rectorado · Córdoba",
+    status: "upcoming",
   },
   {
     year: 2026,

@@ -50,12 +50,12 @@ export function Hero() {
             Ver todas las ediciones
           </a>
           <a
-            href="https://salmorejo.tech/2026/"
+            href="https://salmorejo.tech/2027/"
             target="_blank"
             rel="noreferrer"
             className="rounded-full border-2 border-white px-8 py-3 text-base font-bold text-white transition-colors hover:bg-white/15"
           >
-            Edición 2026
+            Edición 2027
           </a>
         </div>
       </div>
